@@ -1,0 +1,171 @@
+html{
+  font-size: 62.5%
+}
+body {
+  text-align: center;
+  background-color: #283149;
+  background-image: url(./images/bg.png);
+  background-size: 100%
+}
+
+h1 {
+  font-size: 8rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+  display: block;
+}
+
+@keyframes moveInUp{
+  0%{
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+  70%{
+    transform: translateY(2rem)
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveInDown{
+  0%{
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+  70%{
+    transform: translateY(-2rem)
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.w {
+  background-image: url(./images/tom2.png);
+  animation: moveInUp 1s ease-out
+}
+.a {
+  background-image: url(./images/tom1.png) ;
+  animation: moveInDown 1s ease-out
+}
+
+.s {
+  background-image: url(./images/tom3.png) ;
+  animation: moveInUp 1s ease-out
+}
+
+.d {
+  background-image: url(./images/tom4.png);
+  animation: moveInDown 1s ease-out
+}
+
+.j {
+  background-image: url(./images/snare.png);
+  animation: moveInUp 1s ease-out
+}
+
+.k {
+  background-image: url(./images/crash.png);
+  animation: moveInDown 1s ease-out
+  
+}
+
+.l {
+  background-image: url(./images/kick.png) ;
+  animation: moveInUp 1s ease-out
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 1rem solid #404B69;
+  font-size: 8rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 1.5rem;
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  margin: 1rem;
+  background-color: white;
+  transition: all .3s  cubic-bezier(0.68, -0.55, 0.265, 1.55)
+}
+.drum:hover{
+  transform: translateY(-5px) scale(1.1);
+}
+.drum:active{
+  transform: translateY(-3px) scale(1.05);
+  
+}
+a{
+  text-decoration: none;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( to right bottom,#ff5f6d , #ffc371);
+  transition: all 0.3s;
+}
+
+.intro{
+  font-size: 3.5rem;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( to right bottom,#ff5f6d , #ffc371);
+  font-family: 'Comfortaa', cursive;
+  margin-top: 10rem;
+  font-weight: 200;
+  display: inline;
+  text-shadow: 0rem 2rem 4rem rgba(255, 255, 255, 0.5);
+  letter-spacing: 3px
+}
+.was{
+  margin-top: 1rem;
+  margin-left: 2rem
+  
+}
+a:hover{
+  font-weight: 900;
+  font-size: 4rem;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( to right bottom,#c2e59c , #64b3f4);
+  text-shadow: 0rem 1rem 1rem rgba(255, 255, 255, 0.7);
+}
+@media (max-width:800px){
+  h1{
+    font-size: 4rem;
+  }
+  .drum{
+    border: .5rem solid #404B69;
+    font-size: 2.3rem;
+    border-radius: .75rem;
+    width: 5rem;
+    height: 5rem;
+    margin: .75rem;
+    background-size: 75px auto;
+  }
+  
+}
