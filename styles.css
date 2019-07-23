@@ -165,7 +165,21 @@ a:hover{
     width: 5rem;
     height: 5rem;
     margin: .75rem;
-    background-size: 75px auto;
+    background-size: 7.5rem auto;
   }
-  
+  body{
+    background-image: url("./images/mobile.bg.jpg")
+  }
+ footer{
+   margin-top: 20rem
+ }
+ .intro{
+    background-image: linear-gradient( to right bottom,#c2e59c , #64b3f4);
+ }
+ a{
+  background-image: linear-gradient( to right bottom,#c2e59c , #64b3f4);
+ }
+ a:hover{
+   background-image: linear-gradient( to right bottom,#ff5f6d , #ffc371);
+ }
 }
